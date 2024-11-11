@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Simple Counter</h1>
+        <img src="header-image.jpg" alt="Counter Header">
+    </header>
+
+    <!-- Main Layout Section Using CSS Grid -->
+    <div class="grid-container">
+
+        <!-- Sidebar Menu -->
+        <nav id="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content (Counter) -->
+        <main id="content">
+            <h2>Click the buttons to adjust the counter!</h2>
+            <div id="counterValue">0</div>
+            <button id="increment">Increase</button>
+            <button id="decrement">Decrease</button>
+        </main>
+
+        <!-- Advertisement -->
+        <aside id="advertisement">
+            <a href="https://www.amazon.com/s?k=counter+game" target="_blank">
+                <img src="advertisement.jpg" alt="Product Advertisement">
+            </a>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    <footer>
+    <p>Last updated: <span id="lastModified"></span></p>
+    <p><strong>Addendum:</strong> 
+        This page implements a simple counter. The user can increase or decrease the counter value by clicking the respective buttons. The counter value is updated dynamically using JavaScript, and the page layout is structured using CSS Grid in a "Holy Grail" layout. One challenge I faced was ensuring that the counter value updated instantly after the button click, which I resolved by using event listeners and manipulating the DOM directly.
+    </p>
+</footer>
+
+
+</body>
+</html>
